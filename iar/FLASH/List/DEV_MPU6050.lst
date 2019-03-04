@@ -1,0 +1,423 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       25/Apr/2018  19:27:14
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\lib\LPLD\DEV\DEV_MPU6050.c
+#    Command line =  
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\lib\LPLD\DEV\DEV_MPU6050.c
+#        -D LPLD_K60 -D USE_K60D10 -lCN
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\List
+#        -lB
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\List
+#        -o C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\app\ -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\app\camera\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\app\led\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\app\oled\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\app\task\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\app\uart\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\app\twinCore\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\app\mpu6050\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\lib\CPU\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\lib\common\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\lib\LPLD\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\lib\LPLD\HW\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\lib\LPLD\DEV\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\lib\LPLD\FUNC\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\lib\uCOS-II\Ports\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\lib\uCOS-II\Source\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\lib\FatFs\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\lib\FatFs\option\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\lib\USB\common\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\lib\USB\driver\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\lib\USB\descriptor\
+#        -I
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\lib\USB\class\
+#        -Ol -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\CMSIS\Include\" -D ARM_MATH_CM4
+#    List file    =  
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\List\DEV_MPU6050.lst
+#    Object file  =  
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\DEV_MPU6050.o
+#
+###############################################################################
+
+C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\lib\LPLD\DEV\DEV_MPU6050.c
+      1          /**
+      2           * @file DEV_MPU6050.c
+      3           * @version 0.1[By LPLD]
+      4           * @date 2015-02-22
+      5           * @brief MPU60506轴运动处理组件驱动程序
+      6           *
+      7           * 更改建议:可根据实际硬件修改
+      8           *
+      9           * 十分感谢该文件作者对底层库的贡献！
+     10           * http://www.lpld.cn
+     11           * mail:support@lpld.cn
+     12           * 
+     13           * 文件出处：LPLD_K60底层库群
+     14           * 作者：投笔从戎
+     15           */
+     16          #include "common.h"
+     17          #include "DEV_MPU6050.h"
+     18          
+
+   \                                 In section .bss, align 4
+     19          I2C_InitTypeDef MPU6050_init_struct;
+   \                     MPU6050_init_struct:
+   \   00000000                      DS8 16
+     20          
+     21          /*
+     22           *   MPU6050_WriteReg
+     23           *   MPU6050写寄存器状态
+     24           *
+     25           *   参数：
+     26           *    RegisterAddress 寄存器地址
+     27           *    Data 所需要写得内容
+     28          *
+     29           *   返回值
+     30           *    无
+     31           */
+
+   \                                 In section .text, align 2, keep-with-next
+     32          void MPU6050_WriteReg(uint8 RegisterAddress, uint8 Data)
+     33          {
+   \                     MPU6050_WriteReg: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+     34            //发送从机地址
+     35            LPLD_I2C_StartTrans(I2C1, SlaveAddress, I2C_MWSR);
+   \   00000006   0x2200             MOVS     R2,#+0
+   \   00000008   0x2168             MOVS     R1,#+104
+   \   0000000A   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   0000000C   0x.... 0x....      BL       LPLD_I2C_StartTrans
+     36            LPLD_I2C_WaitAck(I2C1, I2C_ACK_ON);
+   \   00000010   0x2101             MOVS     R1,#+1
+   \   00000012   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   00000014   0x.... 0x....      BL       LPLD_I2C_WaitAck
+     37            
+     38            //写MPU6050寄存器地址
+     39            LPLD_I2C_WriteByte(I2C1, RegisterAddress);
+   \   00000018   0x0021             MOVS     R1,R4
+   \   0000001A   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   0000001C   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   0000001E   0x.... 0x....      BL       LPLD_I2C_WriteByte
+     40            LPLD_I2C_WaitAck(I2C1, I2C_ACK_ON);
+   \   00000022   0x2101             MOVS     R1,#+1
+   \   00000024   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   00000026   0x.... 0x....      BL       LPLD_I2C_WaitAck
+     41            
+     42            //向寄存器中写具体数据
+     43            LPLD_I2C_WriteByte(I2C1, Data);
+   \   0000002A   0x0029             MOVS     R1,R5
+   \   0000002C   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   0000002E   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   00000030   0x.... 0x....      BL       LPLD_I2C_WriteByte
+     44            LPLD_I2C_WaitAck(I2C1, I2C_ACK_ON);
+   \   00000034   0x2101             MOVS     R1,#+1
+   \   00000036   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   00000038   0x.... 0x....      BL       LPLD_I2C_WaitAck
+     45          
+     46            LPLD_I2C_Stop(I2C1);
+   \   0000003C   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   0000003E   0x.... 0x....      BL       LPLD_I2C_Stop
+     47          }
+   \   00000042   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+     48          
+     49          /*
+     50           *   MPU6050_ReadReg
+     51           *   MPU6050读寄存器状态
+     52           *
+     53           *   参数：
+     54           *    RegisterAddress 寄存器地址
+     55           *
+     56           *   返回值
+     57           *    所读寄存器状态
+     58           */
+
+   \                                 In section .text, align 2, keep-with-next
+     59          uint8 MPU6050_ReadReg(uint8 RegisterAddress)
+     60          {
+   \                     MPU6050_ReadReg: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+     61            uint8 result;
+     62          
+     63            //发送从机地址
+     64            LPLD_I2C_StartTrans(I2C1, SlaveAddress, I2C_MWSR);
+   \   00000004   0x2200             MOVS     R2,#+0
+   \   00000006   0x2168             MOVS     R1,#+104
+   \   00000008   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   0000000A   0x.... 0x....      BL       LPLD_I2C_StartTrans
+     65            LPLD_I2C_WaitAck(I2C1, I2C_ACK_ON);
+   \   0000000E   0x2101             MOVS     R1,#+1
+   \   00000010   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   00000012   0x.... 0x....      BL       LPLD_I2C_WaitAck
+     66          
+     67            //写MPU6050寄存器地址
+     68            LPLD_I2C_WriteByte(I2C1, RegisterAddress);
+   \   00000016   0x0021             MOVS     R1,R4
+   \   00000018   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   0000001A   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   0000001C   0x.... 0x....      BL       LPLD_I2C_WriteByte
+     69            LPLD_I2C_WaitAck(I2C1, I2C_ACK_ON);
+   \   00000020   0x2101             MOVS     R1,#+1
+   \   00000022   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   00000024   0x.... 0x....      BL       LPLD_I2C_WaitAck
+     70            
+     71            //再次产生开始信号
+     72            LPLD_I2C_ReStart(I2C1);
+   \   00000028   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   0000002A   0x.... 0x....      BL       LPLD_I2C_ReStart
+     73          
+     74            //发送从机地址和读取位
+     75            LPLD_I2C_WriteByte(I2C1, (SlaveAddress<<1)|I2C_MRSW);
+   \   0000002E   0x21D1             MOVS     R1,#+209
+   \   00000030   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   00000032   0x.... 0x....      BL       LPLD_I2C_WriteByte
+     76            LPLD_I2C_WaitAck(I2C1, I2C_ACK_ON);
+   \   00000036   0x2101             MOVS     R1,#+1
+   \   00000038   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   0000003A   0x.... 0x....      BL       LPLD_I2C_WaitAck
+     77          
+     78            //转换主机模式为读
+     79            LPLD_I2C_SetMasterWR(I2C1, I2C_MRSW);
+   \   0000003E   0x2101             MOVS     R1,#+1
+   \   00000040   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   00000042   0x.... 0x....      BL       LPLD_I2C_SetMasterWR
+     80          
+     81            //关闭应答ACK
+     82            LPLD_I2C_WaitAck(I2C1, I2C_ACK_OFF);//关闭ACK
+   \   00000046   0x2100             MOVS     R1,#+0
+   \   00000048   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   0000004A   0x.... 0x....      BL       LPLD_I2C_WaitAck
+     83          
+     84            //读IIC数据
+     85            result =LPLD_I2C_ReadByte(I2C1);
+   \   0000004E   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   00000050   0x.... 0x....      BL       LPLD_I2C_ReadByte
+   \   00000054   0x0004             MOVS     R4,R0
+     86            LPLD_I2C_WaitAck(I2C1, I2C_ACK_ON);
+   \   00000056   0x2101             MOVS     R1,#+1
+   \   00000058   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   0000005A   0x.... 0x....      BL       LPLD_I2C_WaitAck
+     87          
+     88            //发送停止信号
+     89            LPLD_I2C_Stop(I2C1);
+   \   0000005E   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   00000060   0x.... 0x....      BL       LPLD_I2C_Stop
+     90          
+     91            //读IIC数据
+     92            result = LPLD_I2C_ReadByte(I2C1);
+   \   00000064   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   00000066   0x.... 0x....      BL       LPLD_I2C_ReadByte
+   \   0000006A   0x0004             MOVS     R4,R0
+     93            
+     94            LPLD_SYSTICK_DelayMs(1);
+   \   0000006C   0x2001             MOVS     R0,#+1
+   \   0000006E   0x.... 0x....      BL       LPLD_SYSTICK_DelayMs
+     95          
+     96            return result;
+   \   00000072   0x0020             MOVS     R0,R4
+   \   00000074   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000076   0xBD10             POP      {R4,PC}          ;; return
+     97          }
+     98          
+     99          /*
+    100           *   MPU6050_GetResult
+    101           *   获得MPU6050结果
+    102           *
+    103           *   参数：
+    104           *    无
+    105           *
+    106           *   返回值
+    107           *    转换结果 
+    108           */
+
+   \                                 In section .text, align 2, keep-with-next
+    109          int16 MPU6050_GetResult(uint8 Regs_Addr)
+    110          {
+   \                     MPU6050_GetResult: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    111            int16 result,temp;
+    112            result = MPU6050_ReadReg(Regs_Addr);
+   \   00000004   0x0020             MOVS     R0,R4
+   \   00000006   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000008   0x.... 0x....      BL       MPU6050_ReadReg
+   \   0000000C   0x0005             MOVS     R5,R0
+    113            temp   = MPU6050_ReadReg(Regs_Addr+1);
+   \   0000000E   0x1C60             ADDS     R0,R4,#+1
+   \   00000010   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000012   0x.... 0x....      BL       MPU6050_ReadReg
+    114            result=result<<8;
+   \   00000016   0x022D             LSLS     R5,R5,#+8
+    115            result=result|temp;
+   \   00000018   0x4305             ORRS     R5,R0,R5
+    116            return result;
+   \   0000001A   0x0028             MOVS     R0,R5
+   \   0000001C   0xB200             SXTH     R0,R0            ;; SignExt  R0,R0,#+16,#+16
+   \   0000001E   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    117          }
+    118          
+    119          /*
+    120           *   MPU6050_Init
+    121           *   初始化MPU6050，包括初始化MPU6050所需的I2C接口以及MPU6050的寄存器
+    122           *
+    123           *   参数：
+    124           *    无
+    125           *
+    126           *   返回值
+    127           *    无
+    128           */
+
+   \                                 In section .text, align 2, keep-with-next
+    129          void MPU6050_Init()
+    130          {
+   \                     MPU6050_Init: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    131            //初始化MPU6050
+    132            MPU6050_init_struct.I2C_I2Cx = MPU6050_I2CX;          //在MPU6050.h中修改该值
+   \   00000002   0x....             LDR.N    R0,??DataTable2  ;; 0x40067000
+   \   00000004   0x....             LDR.N    R1,??DataTable2_1
+   \   00000006   0x6008             STR      R0,[R1, #+0]
+    133            MPU6050_init_struct.I2C_IntEnable = FALSE;
+   \   00000008   0x2000             MOVS     R0,#+0
+   \   0000000A   0x....             LDR.N    R1,??DataTable2_1
+   \   0000000C   0x7148             STRB     R0,[R1, #+5]
+    134            MPU6050_init_struct.I2C_ICR = MPU6050_SCL_400KHZ;     //可根据实际电路更改SCL频率
+   \   0000000E   0x2017             MOVS     R0,#+23
+   \   00000010   0x....             LDR.N    R1,??DataTable2_1
+   \   00000012   0x7108             STRB     R0,[R1, #+4]
+    135            MPU6050_init_struct.I2C_SclPin = MPU6050_SCLPIN;      //在MPU6050.h中修改该值
+   \   00000014   0x2046             MOVS     R0,#+70
+   \   00000016   0x....             LDR.N    R1,??DataTable2_1
+   \   00000018   0x7188             STRB     R0,[R1, #+6]
+    136            MPU6050_init_struct.I2C_SdaPin = MPU6050_SCLPIN;      //在MPU6050.h中修改该值
+   \   0000001A   0x2046             MOVS     R0,#+70
+   \   0000001C   0x....             LDR.N    R1,??DataTable2_1
+   \   0000001E   0x71C8             STRB     R0,[R1, #+7]
+    137            MPU6050_init_struct.I2C_Isr = NULL;
+   \   00000020   0x2000             MOVS     R0,#+0
+   \   00000022   0x....             LDR.N    R1,??DataTable2_1
+   \   00000024   0x60C8             STR      R0,[R1, #+12]
+    138            LPLD_I2C_Init(MPU6050_init_struct);
+   \   00000026   0x....             LDR.N    R0,??DataTable2_1
+   \   00000028   0xC80F             LDM      R0,{R0-R3}
+   \   0000002A   0x.... 0x....      BL       LPLD_I2C_Init
+    139            
+    140            LPLD_SYSTICK_DelayMs(1);
+   \   0000002E   0x2001             MOVS     R0,#+1
+   \   00000030   0x.... 0x....      BL       LPLD_SYSTICK_DelayMs
+    141            
+    142            MPU6050_WriteReg(PWR_MGMT_1,0x00);    //解除休眠状态
+   \   00000034   0x2100             MOVS     R1,#+0
+   \   00000036   0x206B             MOVS     R0,#+107
+   \   00000038   0x.... 0x....      BL       MPU6050_WriteReg
+    143            MPU6050_WriteReg(SMPLRT_DIV,0x07);    //陀螺仪采样率，典型值：0x07(125Hz)
+   \   0000003C   0x2107             MOVS     R1,#+7
+   \   0000003E   0x2019             MOVS     R0,#+25
+   \   00000040   0x.... 0x....      BL       MPU6050_WriteReg
+    144            MPU6050_WriteReg(CONFIG,0x06);        //低通滤波频率，典型值：0x06(5Hz)
+   \   00000044   0x2106             MOVS     R1,#+6
+   \   00000046   0x201A             MOVS     R0,#+26
+   \   00000048   0x.... 0x....      BL       MPU6050_WriteReg
+    145            MPU6050_WriteReg(GYRO_CONFIG,0x18);   //陀螺仪自检及测量范围，典型值：0x18(不自检，2000deg/s)
+   \   0000004C   0x2118             MOVS     R1,#+24
+   \   0000004E   0x201B             MOVS     R0,#+27
+   \   00000050   0x.... 0x....      BL       MPU6050_WriteReg
+    146            MPU6050_WriteReg(ACCEL_CONFIG,0x01);  //加速计自检、测量范围及高通滤波频率，典型值：0x01(不自检，2G，5Hz)
+   \   00000054   0x2101             MOVS     R1,#+1
+   \   00000056   0x201C             MOVS     R0,#+28
+   \   00000058   0x.... 0x....      BL       MPU6050_WriteReg
+    147            
+    148            LPLD_SYSTICK_DelayMs(1);
+   \   0000005C   0x2001             MOVS     R0,#+1
+   \   0000005E   0x.... 0x....      BL       LPLD_SYSTICK_DelayMs
+    149          }
+   \   00000062   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x40067000         DC32     0x40067000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \   00000000   0x........         DC32     MPU6050_init_struct
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   MPU6050_GetResult
+        16   -> MPU6050_ReadReg
+       8   MPU6050_Init
+         8   -> LPLD_I2C_Init
+         8   -> LPLD_SYSTICK_DelayMs
+         8   -> MPU6050_WriteReg
+       8   MPU6050_ReadReg
+         8   -> LPLD_I2C_ReStart
+         8   -> LPLD_I2C_ReadByte
+         8   -> LPLD_I2C_SetMasterWR
+         8   -> LPLD_I2C_StartTrans
+         8   -> LPLD_I2C_Stop
+         8   -> LPLD_I2C_WaitAck
+         8   -> LPLD_I2C_WriteByte
+         8   -> LPLD_SYSTICK_DelayMs
+      16   MPU6050_WriteReg
+        16   -> LPLD_I2C_StartTrans
+        16   -> LPLD_I2C_Stop
+        16   -> LPLD_I2C_WaitAck
+        16   -> LPLD_I2C_WriteByte
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+      32  MPU6050_GetResult
+     100  MPU6050_Init
+     120  MPU6050_ReadReg
+      68  MPU6050_WriteReg
+      16  MPU6050_init_struct
+
+ 
+  16 bytes in section .bss
+ 328 bytes in section .text
+ 
+ 328 bytes of CODE memory
+  16 bytes of DATA memory
+
+Errors: none
+Warnings: none

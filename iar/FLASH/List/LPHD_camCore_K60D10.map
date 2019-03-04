@@ -1,0 +1,868 @@
+###############################################################################
+#
+# IAR ELF Linker V7.50.1.10123/W32 for ARM                18/Nov/2018  14:54:24
+# Copyright 2007-2015 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Exe\LPHD_camCore_K60D10.out
+#    Map file     =  
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\List\LPHD_camCore_K60D10.map
+#    Command line =  
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\alloc.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\assert.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\calc.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\camera.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\DEV_SCCB.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_ADC.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_CAN.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_DAC.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_DMA.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_ENET.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_FLASH.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_FLEXBUS.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_FTM.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_GPIO.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_I2C.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_LPTMR.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_MCG.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_NVIC.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_PDB.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_PIT.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_RTC.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_SDHC.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_SPI.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_SYSTICK.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_TSI.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_UART.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_USB.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\HW_WDOG.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\i2c.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\io.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\led.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\ledArray.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\LPHD_camCore.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\mpu6050.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\nrf.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\oled.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\relocate.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\startup_K60D10.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\system_MK60.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\task.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\twinCore.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\uart.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\UI.o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj\UIStrings.o
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull -o
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Exe\LPHD_camCore_K60D10.out
+#        --map
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\List\LPHD_camCore_K60D10.map
+#        --config
+#        C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\..\lib\iar_config_files\LPLD_K60DN512_FLASH.icf
+#        --semihosting --entry __iar_program_start "C:\Program Files (x86)\IAR
+#        Systems\Embedded Workbench 7.3\arm\CMSIS\Lib\IAR\iar_cortexM4l_math.a"
+#        --merge_duplicate_sections --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"A2":  place at 0x00000410 { ro section .noinit };
+"P1":  place in [from 0x00000000 to 0x00080000] { ro, block CodeRelocate };
+"P2":  place in [from 0x1fff0410 to 0x20010000] {
+          rw, block CodeRelocateRam, block CSTACK, block HEAP };
+
+  Section              Kind        Address    Size  Object
+  -------              ----        -------    ----  ------
+"A1":                                        0x400
+  .intvec              ro code  0x00000000   0x400  startup_K60D10.o [1]
+                              - 0x00000400   0x400
+
+"P1", part 1 of 2:                             0x4
+  .rodata              const    0x00000400     0x0  zero_init3.o [5]
+  Initializer bytes    const    0x00000400     0x4  <for P2 s0>
+                              - 0x00000404     0x4
+
+"A2":                                         0x14
+  .noinit              ro code  0x00000410    0x10  startup_K60D10.o [1]
+  .noinit              ro code  0x00000420     0x4  startup_K60D10.o [1]
+                              - 0x00000424    0x14
+
+"P1", part 2 of 2:                          0xe618
+  .data_init                    0x00000424  0x661c  <Block>
+    Initializer bytes  const    0x00000424  0x661c  <for .data-1>
+  .rodata              const    0x00006a40     0x2  camera.o [1]
+  .text                ro code  0x00006a44  0x1a48  calc.o [1]
+  .text                ro code  0x0000848c     0x8  abs.o [3]
+  .text                ro code  0x00008494    0x4e  FltToDbl.o [4]
+  .text                ro code  0x000084e2     0x6  cos.o [4]
+  .text                ro code  0x000084e8    0x30  I32ToDbl.o [4]
+  .text                ro code  0x00008518   0x1a2  DblMul.o [4]
+  .text                ro code  0x000086ba     0x6  sin.o [4]
+  .text                ro code  0x000086c0   0x180  DblSub.o [4]
+  .text                ro code  0x00008840    0xe8  DblAdd.o [4]
+  .text                ro code  0x00008928    0x4c  DblToI32.o [4]
+  .text                ro code  0x00008974   0x256  DblDiv.o [4]
+  .text                ro code  0x00008bcc    0x90  DblToFlt.o [4]
+  .text                ro code  0x00008c5c   0x426  xsin.o [4]
+  .text                ro code  0x00009084    0x2e  DblCmpLe.o [4]
+  .text                ro code  0x000090b4    0x2e  DblCmpGe.o [4]
+  .text                ro code  0x000090e4     0xc  errno.o [3]
+  .text                ro code  0x000090f0   0x160  xquad.o [4]
+  .text                ro code  0x00009250     0x2  xtls.o [3]
+  .text                ro code  0x00009252    0x7a  xdint.o [4]
+  .text                ro code  0x000092cc    0x20  DblCmpEq.o [4]
+  .text                ro code  0x000092ec   0x1a8  fmod.o [4]
+  .text                ro code  0x00009494     0xc  iarEdom.o [5]
+  .text                ro code  0x000094a0   0x98c  oled.o [1]
+  .text                ro code  0x00009e2c   0x1b4  HW_GPIO.o [1]
+  .text                ro code  0x00009fe0    0x56  ABImemcpy_unaligned.o [5]
+  .text                ro code  0x0000a038    0x44  FltToS32.o [4]
+  .text                ro code  0x0000a07c    0xd8  FltMul.o [4]
+  .text                ro code  0x0000a154    0x84  FltAdd.o [4]
+  .text                ro code  0x0000a1d8    0xd6  FltSub.o [4]
+  .text                ro code  0x0000a2b0   0x7d4  HW_UART.o [1]
+  .text                ro code  0x0000aa84   0x4dc  camera.o [1]
+  .text                ro code  0x0000af60   0x430  HW_DMA.o [1]
+  .text                ro code  0x0000b390   0x33c  DEV_SCCB.o [1]
+  .rodata              const    0x0000b6cc   0x400  oled.o [1]
+  .text                ro code  0x0000bacc   0x3ec  LPHD_camCore.o [1]
+  .text                ro code  0x0000beb8   0x18c  HW_NVIC.o [1]
+  .text                ro code  0x0000c044   0x268  HW_PIT.o [1]
+  .text                ro code  0x0000c2ac   0x3ac  twinCore.o [1]
+  .text                ro code  0x0000c658   0x390  uart.o [1]
+  .text                ro code  0x0000c9e8   0x312  mpu6050.o [1]
+  .text                ro code  0x0000ccfc    0x2e  I32ToFlt.o [4]
+  .text                ro code  0x0000cd2c   0x2bc  HW_I2C.o [1]
+  .rodata              const    0x0000cfe8   0x280  oled.o [1]
+  .text                ro code  0x0000d268   0x248  ledArray.o [1]
+  .rodata              const    0x0000d4b0   0x228  oled.o [1]
+  .text                ro code  0x0000d6d8   0x218  HW_SPI.o [1]
+  .text                ro code  0x0000d8f0   0x214  i2c.o [1]
+  .text                ro code  0x0000db04   0x1e2  HW_CAN.o [1]
+  .text                ro code  0x0000dce8   0x188  led.o [1]
+  Veneer               ro code  0x0000de70     0x8  - Linker created -
+  .text                ro code  0x0000de78   0x170  HW_MCG.o [1]
+  .text                ro code  0x0000dfe8   0x168  task.o [1]
+  .text                ro code  0x0000e150   0x100  system_MK60.o [1]
+  .text                ro code  0x0000e250    0xa0  relocate.o [1]
+  .text                ro code  0x0000e2f0    0xf4  HW_DAC.o [1]
+  .rodata              const    0x0000e3e4    0xc0  ledArray.o [1]
+  .text                ro code  0x0000e4a4    0xb8  UI.o [1]
+  .rodata              const    0x0000e55c    0x80  oled.o [1]
+  .text                ro code  0x0000e5dc    0x80  HW_ENET.o [1]
+  .text                ro code  0x0000e65c    0x80  HW_PDB.o [1]
+  .rodata              const    0x0000e6dc    0x60  calc.o [1]
+  .text                ro code  0x0000e73c    0x60  HW_RTC.o [1]
+  CodeRelocate                  0x0000e79c    0x4c  <Block>
+    Initializer bytes  const    0x0000e79c    0x4c  <for CodeRelocateRam-1>
+  .rodata              const    0x0000e7e8    0x40  calc.o [1]
+  .text                ro code  0x0000e828    0x40  HW_TSI.o [1]
+  .text                ro code  0x0000e868    0x40  zero_init3.o [5]
+  .text                ro code  0x0000e8a8    0x30  iarttio.o [6]
+  .text                ro code  0x0000e8d8     0x8  XShttio.o [3]
+  .text                ro code  0x0000e8e0    0x28  data_init.o [5]
+  .text                ro code  0x0000e908    0x24  HW_FTM.o [1]
+  .iar.init_table      const    0x0000e92c    0x10  - Linker created -
+  .text                ro code  0x0000e93c    0x20  HW_LPTMR.o [1]
+  .text                ro code  0x0000e95c    0x1a  cmain.o [5]
+  .text                ro code  0x0000e976     0x4  low_level_init.o [3]
+  .text                ro code  0x0000e97a     0x4  exit.o [3]
+  .text                ro code  0x0000e980     0xa  cexit.o [5]
+  .text                ro code  0x0000e98c    0x14  exit.o [6]
+  .text                ro code  0x0000e9a0    0x18  HW_ADC.o [1]
+  .rodata              const    0x0000e9b8    0x14  LPHD_camCore.o [1]
+  .rodata              const    0x0000e9cc    0x14  LPHD_camCore.o [1]
+  .rodata              const    0x0000e9e0    0x14  LPHD_camCore.o [1]
+  .rodata              const    0x0000e9f4    0x14  LPHD_camCore.o [1]
+  .text                ro code  0x0000ea08    0x10  HW_SYSTICK.o [1]
+  .text                ro code  0x0000ea18    0x10  HW_USB.o [1]
+  .text                ro code  0x0000ea28     0xc  cstartup_M.o [5]
+  .rodata              const    0x0000ea34     0x8  calc.o [1]
+                              - 0x0000ea3c  0xe618
+
+"P2", part 1 of 4:                          0x6668
+  .data                         0x1fff0410  0x661c  <Block>
+    .data-1                     0x1fff0410  0x6619  <Init block>
+      .data            inited   0x1fff0410   0x440  calc.o [1]
+      .data            inited   0x1fff0850    0x64  camera.o [1]
+      .data            inited   0x1fff08b4     0x4  camera.o [1]
+      .data            inited   0x1fff08b8  0x5f70  camera.o [1]
+      .data            inited   0x1fff6828     0x4  HW_MCG.o [1]
+      .data            inited   0x1fff682c     0x4  HW_MCG.o [1]
+      .data            inited   0x1fff6830     0x4  HW_MCG.o [1]
+      .data            inited   0x1fff6834     0x4  HW_MCG.o [1]
+      .data            inited   0x1fff6838    0x10  i2c.o [1]
+      .data            inited   0x1fff6848     0x8  led.o [1]
+      .data            inited   0x1fff6850    0x10  ledArray.o [1]
+      .data            inited   0x1fff6860    0x34  mpu6050.o [1]
+      .data            inited   0x1fff6894    0x34  oled.o [1]
+      .data            inited   0x1fff68c8     0x4  system_MK60.o [1]
+      .data            inited   0x1fff68cc    0x28  task.o [1]
+      .data            inited   0x1fff68f4    0x20  twinCore.o [1]
+      .data            inited   0x1fff6914    0x18  uart.o [1]
+      .data            inited   0x1fff692c    0x44  UI.o [1]
+      .data            inited   0x1fff6970    0xb0  UIStrings.o [1]
+      .data            inited   0x1fff6a20     0x8  XShttio.o [3]
+      .data            inited   0x1fff6a28     0x1  camera.o [1]
+  CodeRelocateRam               0x1fff6a2c    0x4c  <Block>
+    CodeRelocateRam-1           0x1fff6a2c    0x4c  <Init block>
+      .textrw          inited   0x1fff6a2c    0x4c  HW_MCG.o [1]
+                              - 0x1fff6a78  0x6668
+
+"P2", part 2 of 4:                          0x8a18
+  .bss                          0x1fff6a78  0x8a18  <Block>
+    .bss               zero     0x1fff6a78    0x48  uart.o [1]
+    .bss               zero     0x1fff6ac0   0x1e0  calc.o [1]
+    .bss               zero     0x1fff6ca0   0x1e0  calc.o [1]
+    .bss               zero     0x1fff6e80    0x54  calc.o [1]
+    .bss               zero     0x1fff6ed4     0x4  calc.o [1]
+    .bss               zero     0x1fff6ed8     0x4  calc.o [1]
+    .bss               zero     0x1fff6edc     0x4  calc.o [1]
+    .bss               zero     0x1fff6ee0     0x4  calc.o [1]
+    .bss               zero     0x1fff6ee4     0x4  calc.o [1]
+    .bss               zero     0x1fff6ee8     0x4  calc.o [1]
+    .bss               zero     0x1fff6eec    0x28  calc.o [1]
+    .bss               zero     0x1fff6f14    0x28  calc.o [1]
+    .bss               zero     0x1fff6f3c  0x8000  calc.o [1]
+    .bss               zero     0x1fffef3c    0x14  camera.o [1]
+    .bss               zero     0x1fffef50    0x14  camera.o [1]
+    .bss               zero     0x1fffef64    0x14  camera.o [1]
+    .bss               zero     0x1fffef78    0x2c  camera.o [1]
+    .bss               zero     0x1fffefa4     0x8  HW_ADC.o [1]
+    .bss               zero     0x1fffefac   0x100  HW_CAN.o [1]
+    .bss               zero     0x1ffff0ac    0x40  HW_CAN.o [1]
+    .bss               zero     0x1ffff0ec    0x40  HW_CAN.o [1]
+    .bss               zero     0x1ffff12c     0x8  HW_DAC.o [1]
+    .bss               zero     0x1ffff134     0x8  HW_DAC.o [1]
+    .bss               zero     0x1ffff13c     0x8  HW_DAC.o [1]
+    .bss               zero     0x1ffff144    0x40  HW_DMA.o [1]
+    .bss               zero     0x1ffff184    0x10  HW_ENET.o [1]
+    .bss               zero     0x1ffff194     0xc  HW_FTM.o [1]
+    .bss               zero     0x1ffff1a0    0x14  HW_GPIO.o [1]
+    .bss               zero     0x1ffff1b4     0x8  HW_I2C.o [1]
+    .bss               zero     0x1ffff1bc     0x4  HW_LPTMR.o [1]
+    .bss               zero     0x1ffff1c0     0x4  HW_PDB.o [1]
+    .bss               zero     0x1ffff1c4     0x4  HW_PDB.o [1]
+    .bss               zero     0x1ffff1c8    0x10  HW_PIT.o [1]
+    .bss               zero     0x1ffff1d8     0xc  HW_RTC.o [1]
+    .bss               zero     0x1ffff1e4    0x18  HW_SPI.o [1]
+    .bss               zero     0x1ffff1fc    0x18  HW_SPI.o [1]
+    .bss               zero     0x1ffff214    0x18  HW_SPI.o [1]
+    .bss               zero     0x1ffff22c     0x4  HW_SYSTICK.o [1]
+    .bss               zero     0x1ffff230     0x8  HW_TSI.o [1]
+    .bss               zero     0x1ffff238    0x18  HW_UART.o [1]
+    .bss               zero     0x1ffff250    0x18  HW_UART.o [1]
+    .bss               zero     0x1ffff268     0x4  HW_USB.o [1]
+    .bss               zero     0x1ffff26c    0x10  i2c.o [1]
+    .bss               zero     0x1ffff27c    0x14  led.o [1]
+    .bss               zero     0x1ffff290    0x14  ledArray.o [1]
+    .bss               zero     0x1ffff2a4     0x4  ledArray.o [1]
+    .bss               zero     0x1ffff2a8     0x4  ledArray.o [1]
+    .bss               zero     0x1ffff2ac     0x4  LPHD_camCore.o [1]
+    .bss               zero     0x1ffff2b0     0x4  LPHD_camCore.o [1]
+    .bss               zero     0x1ffff2b4     0x4  LPHD_camCore.o [1]
+    .bss               zero     0x1ffff2b8     0x4  LPHD_camCore.o [1]
+    .bss               zero     0x1ffff2bc    0x14  LPHD_camCore.o [1]
+    .bss               zero     0x1ffff2d0    0x14  LPHD_camCore.o [1]
+    .bss               zero     0x1ffff2e4    0x14  LPHD_camCore.o [1]
+    .bss               zero     0x1ffff2f8    0x14  oled.o [1]
+    .bss               zero     0x1ffff30c     0x4  task.o [1]
+    .bss               zero     0x1ffff310    0x14  task.o [1]
+    .bss               zero     0x1ffff324    0x14  task.o [1]
+    .bss               zero     0x1ffff338    0x14  twinCore.o [1]
+    .bss               zero     0x1ffff34c    0x6c  twinCore.o [1]
+    .bss               zero     0x1ffff3b8     0x4  twinCore.o [1]
+    .bss               zero     0x1ffff3bc    0x1c  twinCore.o [1]
+    .bss               zero     0x1ffff3d8    0x24  uart.o [1]
+    .bss               zero     0x1ffff3fc    0x6c  uart.o [1]
+    .bss               zero     0x1ffff468    0x1c  uart.o [1]
+    .bss               zero     0x1ffff484     0x4  UI.o [1]
+    .bss               zero     0x1ffff488     0x4  UI.o [1]
+    .bss               zero     0x1ffff48c     0x2  camera.o [1]
+    .bss               zero     0x1ffff48e     0x1  camera.o [1]
+    .bss               zero     0x1ffff48f     0x1  i2c.o [1]
+                              - 0x1ffff490  0x8a18
+
+"P2", part 3 of 4:                          0x1000
+  CSTACK                        0x1ffff490  0x1000  <Block>
+    CSTACK             uninit   0x1ffff490  0x1000  <Block tail>
+                              - 0x20000490  0x1000
+
+"P2", part 4 of 4:                             0x4
+  P2 s0                         0x20000490     0x4  <Init block>
+    __DLIB_PERTHREAD   inited   0x20000490     0x4  errno.o [3]
+                              - 0x20000494     0x4
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x8a18:
+          0x1fff6a78  0x8a18
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  rw code  ro data  rw data
+    ------                 -------  -------  -------  -------
+C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj: [1]
+    DEV_SCCB.o                 828
+    HW_ADC.o                    24                          8
+    HW_CAN.o                   482                        384
+    HW_DAC.o                   244                         24
+    HW_DMA.o                 1 072                         64
+    HW_ENET.o                  128                         16
+    HW_FTM.o                    36                         12
+    HW_GPIO.o                  436                         20
+    HW_I2C.o                   700                          8
+    HW_LPTMR.o                  32                          4
+    HW_MCG.o                   368       76       92       16
+    HW_NVIC.o                  396
+    HW_PDB.o                   128                          8
+    HW_PIT.o                   616                         16
+    HW_RTC.o                    96                         12
+    HW_SPI.o                   536                         72
+    HW_SYSTICK.o                16                          4
+    HW_TSI.o                    64                          8
+    HW_UART.o                2 004                         48
+    HW_USB.o                    16                          4
+    LPHD_camCore.o           1 004                80       76
+    UI.o                       184                68       76
+    UIStrings.o                                  176      176
+    calc.o                   6 728             1 256   35 004
+    camera.o                 1 244            24 539   24 644
+    i2c.o                      532                16       33
+    led.o                      392                 8       28
+    ledArray.o                 584               208       44
+    mpu6050.o                  786                52       52
+    oled.o                   2 444             2 396       72
+    relocate.o                 160
+    startup_K60D10.o         1 044
+    system_MK60.o              256                 4        4
+    task.o                     360                40       84
+    twinCore.o                 940                32      192
+    uart.o                     912                24      268
+    ---------------------------------------------------------
+    Total:                  25 792       76   28 991   61 481
+
+command line: [2]
+    ---------------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    XShttio.o                    8                 8        8
+    abs.o                        8
+    errno.o                     12                 4        4
+    exit.o                       4
+    low_level_init.o             4
+    xtls.o                       2
+    ---------------------------------------------------------
+    Total:                      38                12       12
+
+m7M_tl.a: [4]
+    DblAdd.o                   232
+    DblCmpEq.o                  32
+    DblCmpGe.o                  46
+    DblCmpLe.o                  46
+    DblDiv.o                   598
+    DblMul.o                   418
+    DblSub.o                   384
+    DblToFlt.o                 144
+    DblToI32.o                  76
+    FltAdd.o                   132
+    FltMul.o                   216
+    FltSub.o                   214
+    FltToDbl.o                  78
+    FltToS32.o                  68
+    I32ToDbl.o                  48
+    I32ToFlt.o                  46
+    cos.o                        6
+    fmod.o                     424
+    sin.o                        6
+    xdint.o                    122
+    xquad.o                    352
+    xsin.o                   1 062
+    ---------------------------------------------------------
+    Total:                   4 750
+
+rt7M_tl.a: [5]
+    ABImemcpy_unaligned.o       86
+    cexit.o                     10
+    cmain.o                     26
+    cstartup_M.o                12
+    data_init.o                 40
+    iarEdom.o                   12
+    zero_init3.o                64
+    ---------------------------------------------------------
+    Total:                     250
+
+shb_l.a: [6]
+    exit.o                      20
+    iarttio.o                   48
+    ---------------------------------------------------------
+    Total:                      68
+
+    Gaps                        24
+    Linker created               8                19    4 096
+-------------------------------------------------------------
+    Grand Total:            30 930       76   29 022   65 589
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.bss$$Base              0x1fff6a78           --   Gb  - Linker created -
+.bss$$Limit             0x1ffff490           --   Gb  - Linker created -
+.data$$Base             0x1fff0410           --   Gb  - Linker created -
+.data$$Limit            0x1fff6a2c           --   Gb  - Linker created -
+.data_init$$Base        0x00000424           --   Gb  - Linker created -
+.data_init$$Limit       0x00006a40           --   Gb  - Linker created -
+.iar.init_table$$Base   0x0000e92c           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x0000e93c           --   Gb  - Linker created -
+?main                   0x0000e95d          Code  Gb  cmain.o [5]
+ADC0_IRQHandler         0x0000e9a1     0xa  Code  Gb  HW_ADC.o [1]
+ADC1_IRQHandler         0x0000e9ab     0xa  Code  Gb  HW_ADC.o [1]
+ADC_ISR                 0x1fffefa4     0x8  Data  Gb  HW_ADC.o [1]
+CALC_3dConnect          0x00007d73    0x78  Code  Lc  calc.o [1]
+CALC_3dDrawLine         0x00007d3f    0x34  Code  Lc  calc.o [1]
+CALC_3dSetPix           0x00007d0f    0x30  Code  Lc  calc.o [1]
+CALC_3to2               0x00007ba5    0x34  Code  Lc  calc.o [1]
+CALC_Calc               0x00006a59  0x1146  Code  Gb  calc.o [1]
+CALC_DrawLine           0x00007c55    0xba  Code  Lc  calc.o [1]
+CALC_GetCHPix           0x00007deb    0x2e  Code  Lc  calc.o [1]
+CALC_My3d               0x000080c7   0x396  Code  Gb  calc.o [1]
+CALC_PtRotate           0x00007e29   0x29e  Code  Lc  calc.o [1]
+CALC_SetPix             0x00007bd9    0x7c  Code  Lc  calc.o [1]
+CAN0_BUS_OFF_IRQHandler
+                        0x0000dc5f     0x8  Code  Gb  HW_CAN.o [1]
+CAN0_ERR_IRQHandler     0x0000dc67     0xe  Code  Gb  HW_CAN.o [1]
+CAN0_IMEU_IRQHandler    0x0000dc8b     0x2  Code  Gb  HW_CAN.o [1]
+CAN0_ISR                0x1ffff0ac    0x40  Data  Gb  HW_CAN.o [1]
+CAN0_LR_IRQHandler      0x0000dc8d     0x2  Code  Gb  HW_CAN.o [1]
+CAN0_MESS_IRQHandler    0x0000dc57     0x8  Code  Gb  HW_CAN.o [1]
+CAN0_RW_IRQHandler      0x0000dc7f     0xa  Code  Gb  HW_CAN.o [1]
+CAN0_TW_IRQHandler      0x0000dc75     0xa  Code  Gb  HW_CAN.o [1]
+CAN0_WAKE_UP_IRQHandler
+                        0x0000dc89     0x2  Code  Gb  HW_CAN.o [1]
+CAN1_BUS_OFF_IRQHandler
+                        0x0000dc97     0x8  Code  Gb  HW_CAN.o [1]
+CAN1_ERR_IRQHandler     0x0000dc9f     0xe  Code  Gb  HW_CAN.o [1]
+CAN1_IMEU_IRQHandler    0x0000dce3     0x2  Code  Gb  HW_CAN.o [1]
+CAN1_ISR                0x1ffff0ec    0x40  Data  Gb  HW_CAN.o [1]
+CAN1_LR_IRQHandler      0x0000dce5     0x2  Code  Gb  HW_CAN.o [1]
+CAN1_MESS_IRQHandler    0x0000dc8f     0x8  Code  Gb  HW_CAN.o [1]
+CAN1_RW_IRQHandler      0x0000dcb7     0xa  Code  Gb  HW_CAN.o [1]
+CAN1_TW_IRQHandler      0x0000dcad     0xa  Code  Gb  HW_CAN.o [1]
+CAN1_WAKE_UP_IRQHandler
+                        0x0000dce1     0x2  Code  Gb  HW_CAN.o [1]
+CH16x16                 0x0000e3e4    0xc0  Data  Lc  ledArray.o [1]
+CH16x16                 0x0000cfe8   0x280  Data  Gb  oled.o [1]
+CSTACK$$Base            0x1ffff490           --   Gb  - Linker created -
+CSTACK$$Limit           0x20000490           --   Gb  - Linker created -
+Camera_ChangeGamma      0x0000ac8d     0xe  Code  Gb  camera.o [1]
+Camera_Delay            0x0000aa85    0x18  Code  Lc  camera.o [1]
+Camera_GPIO_Init        0x0000aa9d   0x154  Code  Lc  camera.o [1]
+CodeRelocate$$Base      0x0000e79c           --   Gb  - Linker created -
+CodeRelocate$$Limit     0x0000e7e8           --   Gb  - Linker created -
+CodeRelocateRam$$Base   0x1fff6a2c           --   Gb  - Linker created -
+CodeRelocateRam$$Limit  0x1fff6a78           --   Gb  - Linker created -
+DAC0_IRQHandler         0x0000e2f1    0x6a  Code  Gb  HW_DAC.o [1]
+DAC1_IRQHandler         0x0000e35b    0x6a  Code  Gb  HW_DAC.o [1]
+DAC_RDPTBOT_ISR         0x1ffff12c     0x8  Data  Gb  HW_DAC.o [1]
+DAC_RDPTTOP_ISR         0x1ffff134     0x8  Data  Gb  HW_DAC.o [1]
+DAC_WATERMK_ISR         0x1ffff13c     0x8  Data  Gb  HW_DAC.o [1]
+DMA0_IRQHandler         0x0000b20f    0x16  Code  Gb  HW_DMA.o [1]
+DMA10_IRQHandler        0x0000b2eb    0x16  Code  Gb  HW_DMA.o [1]
+DMA11_IRQHandler        0x0000b301    0x16  Code  Gb  HW_DMA.o [1]
+DMA12_IRQHandler        0x0000b317    0x16  Code  Gb  HW_DMA.o [1]
+DMA13_IRQHandler        0x0000b32d    0x16  Code  Gb  HW_DMA.o [1]
+DMA14_IRQHandler        0x0000b343    0x16  Code  Gb  HW_DMA.o [1]
+DMA15_IRQHandler        0x0000b359    0x16  Code  Gb  HW_DMA.o [1]
+DMA1_IRQHandler         0x0000b225    0x16  Code  Gb  HW_DMA.o [1]
+DMA2_IRQHandler         0x0000b23b    0x16  Code  Gb  HW_DMA.o [1]
+DMA3_IRQHandler         0x0000b251    0x16  Code  Gb  HW_DMA.o [1]
+DMA4_IRQHandler         0x0000b267    0x16  Code  Gb  HW_DMA.o [1]
+DMA5_IRQHandler         0x0000b27d    0x16  Code  Gb  HW_DMA.o [1]
+DMA6_IRQHandler         0x0000b293    0x16  Code  Gb  HW_DMA.o [1]
+DMA7_IRQHandler         0x0000b2a9    0x16  Code  Gb  HW_DMA.o [1]
+DMA8_IRQHandler         0x0000b2bf    0x16  Code  Gb  HW_DMA.o [1]
+DMA9_IRQHandler         0x0000b2d5    0x16  Code  Gb  HW_DMA.o [1]
+DMA_Complete_isr        0x0000ae89    0x24  Code  Gb  camera.o [1]
+DMA_ISR                 0x1ffff144    0x40  Data  Gb  HW_DMA.o [1]
+DefaultISR              0x0000e24f     0x2  Code  Gb  system_MK60.o [1]
+ENET_ISR                0x1ffff184    0x10  Data  Gb  HW_ENET.o [1]
+Eth_Err_Misc_IRQHandler
+                        0x0000e63f    0x16  Code  Gb  HW_ENET.o [1]
+Eth_IEEE1588_IRQHandler
+                        0x0000e629    0x16  Code  Gb  HW_ENET.o [1]
+Eth_RX_IRQHandler       0x0000e5dd    0x26  Code  Gb  HW_ENET.o [1]
+Eth_TX_IRQHandler       0x0000e603    0x26  Code  Gb  HW_ENET.o [1]
+F6x8                    0x0000d4b0   0x228  Data  Gb  oled.o [1]
+FTM0_IRQHandler         0x0000e909     0xa  Code  Gb  HW_FTM.o [1]
+FTM1_IRQHandler         0x0000e915     0xa  Code  Gb  HW_FTM.o [1]
+FTM2_IRQHandler         0x0000e91f     0xa  Code  Gb  HW_FTM.o [1]
+FTM_ISR                 0x1ffff194     0xc  Data  Gb  HW_FTM.o [1]
+GPIO_ISR                0x1ffff1a0    0x14  Data  Gb  HW_GPIO.o [1]
+HardFault_Handler       0x0000e24d     0x2  Code  Gb  system_MK60.o [1]
+I2C0_IRQHandler         0x0000ceeb    0x5a  Code  Gb  HW_I2C.o [1]
+I2C1_IRQHandler         0x0000cf45    0x5a  Code  Gb  HW_I2C.o [1]
+I2C_Delay               0x0000d8f1     0xe  Code  Lc  i2c.o [1]
+I2C_ISR                 0x1ffff1b4     0x8  Data  Gb  HW_I2C.o [1]
+I2C_Init                0x0000d8ff    0x3a  Code  Gb  i2c.o [1]
+I2C_ReadReg             0x0000d939    0x84  Code  Gb  i2c.o [1]
+I2C_ReadWord            0x0000d9bd    0xe8  Code  Gb  i2c.o [1]
+I2C_WriteReg            0x0000daa5    0x4c  Code  Gb  i2c.o [1]
+IMG_isr                 0x0000aead    0x5c  Code  Gb  camera.o [1]
+Image_2_computer        0x0000c949    0x76  Code  Gb  uart.o [1]
+Img_diffExtract         0x0000ad6b   0x11c  Code  Gb  camera.o [1]
+Img_extract             0x0000ac9b    0xd0  Code  Gb  camera.o [1]
+LEDARRAY_Go             0x0000d3f1    0x60  Code  Gb  ledArray.o [1]
+LEDARRAY_Init           0x0000d269    0x5a  Code  Gb  ledArray.o [1]
+LEDARRAY_Set            0x0000d2c3    0x8c  Code  Gb  ledArray.o [1]
+LEDARRAY_Show           0x0000d34f    0xa2  Code  Gb  ledArray.o [1]
+LED_Init                0x0000dce9    0xc8  Code  Gb  led.o [1]
+LED_Set                 0x0000ddb1    0xa2  Code  Gb  led.o [1]
+LPLD_CAN_Interrupt_ClearPending
+                        0x0000db05    0x24  Code  Lc  HW_CAN.o [1]
+LPLD_CAN_Interrupt_GetFlag
+                        0x0000db29    0x1e  Code  Lc  HW_CAN.o [1]
+LPLD_CAN_MB_ISR         0x0000dbfd    0x5a  Code  Lc  HW_CAN.o [1]
+LPLD_CAN_Receive_Interrupt
+                        0x0000dba1    0x5c  Code  Lc  HW_CAN.o [1]
+LPLD_CAN_Transmit_Interrupt
+                        0x0000db47    0x5a  Code  Gb  HW_CAN.o [1]
+LPLD_DMA_EnableIrq      0x0000b1f9    0x16  Code  Gb  HW_DMA.o [1]
+LPLD_DMA_Init           0x0000af77   0x282  Code  Gb  HW_DMA.o [1]
+LPLD_GPIO_EnableIrq     0x00009ee7    0x40  Code  Gb  HW_GPIO.o [1]
+LPLD_GPIO_Init          0x00009e41    0xa6  Code  Gb  HW_GPIO.o [1]
+LPLD_GPIO_Output_b      0x00009f27    0x18  Code  Gb  HW_GPIO.o [1]
+LPLD_I2C_Init           0x0000cd2d   0x124  Code  Gb  HW_I2C.o [1]
+LPLD_I2C_ReStart        0x0000ce63     0xa  Code  Gb  HW_I2C.o [1]
+LPLD_I2C_ReadByte       0x0000ceaf     0x6  Code  Gb  HW_I2C.o [1]
+LPLD_I2C_SetMasterWR    0x0000ceb5    0x1a  Code  Gb  HW_I2C.o [1]
+LPLD_I2C_Start          0x0000ce51    0x12  Code  Gb  HW_I2C.o [1]
+LPLD_I2C_StartTrans     0x0000cecf    0x1c  Code  Gb  HW_I2C.o [1]
+LPLD_I2C_Stop           0x0000ce6d    0x12  Code  Gb  HW_I2C.o [1]
+LPLD_I2C_WaitAck        0x0000ce7f    0x2c  Code  Gb  HW_I2C.o [1]
+LPLD_I2C_WriteByte      0x0000ceab     0x4  Code  Gb  HW_I2C.o [1]
+LPLD_NVIC_Init          0x0000bf77    0xce  Code  Gb  HW_NVIC.o [1]
+LPLD_PIT_Close          0x0000c24f    0x32  Code  Gb  HW_PIT.o [1]
+LPLD_PIT_EnableIrq      0x0000c0f1    0x16  Code  Gb  HW_PIT.o [1]
+LPLD_PIT_Init           0x0000c059    0x98  Code  Gb  HW_PIT.o [1]
+LPLD_PIT_Time_Get       0x0000c1d9    0x76  Code  Gb  HW_PIT.o [1]
+LPLD_PIT_Time_Start     0x0000c15f    0x7a  Code  Gb  HW_PIT.o [1]
+LPLD_PLL_Setup          0x0000de79   0x170  Code  Gb  HW_MCG.o [1]
+LPLD_SCCB_Ack           0x0000b527    0x3c  Code  Lc  DEV_SCCB.o [1]
+LPLD_SCCB_Delay         0x0000b6c1     0xc  Code  Lc  DEV_SCCB.o [1]
+LPLD_SCCB_Init          0x0000b391    0x34  Code  Gb  DEV_SCCB.o [1]
+LPLD_SCCB_NoAck         0x0000b563    0x3c  Code  Lc  DEV_SCCB.o [1]
+LPLD_SCCB_ReadReg       0x0000b40d    0x84  Code  Gb  DEV_SCCB.o [1]
+LPLD_SCCB_ReceiveByte   0x0000b64b    0x62  Code  Lc  DEV_SCCB.o [1]
+LPLD_SCCB_SendByte      0x0000b5f9    0x52  Code  Lc  DEV_SCCB.o [1]
+LPLD_SCCB_Start         0x0000b491    0x6a  Code  Lc  DEV_SCCB.o [1]
+LPLD_SCCB_Stop          0x0000b4fb    0x2c  Code  Lc  DEV_SCCB.o [1]
+LPLD_SCCB_WaitAck       0x0000b59f    0x5a  Code  Lc  DEV_SCCB.o [1]
+LPLD_SCCB_WriteReg      0x0000b3c5    0x48  Code  Gb  DEV_SCCB.o [1]
+LPLD_Set_SYS_DIV        0x1fff6a2d    0x4c  Code  Gb  HW_MCG.o [1]
+LPLD_UART_EnableIrq     0x0000a6e9    0x98  Code  Gb  HW_UART.o [1]
+LPLD_UART_GetChar       0x0000a6d1     0xe  Code  Gb  HW_UART.o [1]
+LPLD_UART_Init          0x0000a2c7   0x40a  Code  Gb  HW_UART.o [1]
+LPLD_UART_PutChar       0x0000a6df     0xa  Code  Gb  HW_UART.o [1]
+LPTMR_ISR               0x1ffff1bc     0x4  Data  Gb  HW_LPTMR.o [1]
+LPT_IRQHandler          0x0000e93d    0x16  Code  Gb  HW_LPTMR.o [1]
+MPU6050_Check           0x0000c9f9    0x1e  Code  Lc  mpu6050.o [1]
+MPU6050_Delay           0x0000c9e9    0x10  Code  Lc  mpu6050.o [1]
+MPU6050_GetAcc          0x0000ca59    0x26  Code  Gb  mpu6050.o [1]
+MPU6050_GetAcc_X        0x0000cc91     0xe  Code  Gb  mpu6050.o [1]
+MPU6050_GetAcc_Y        0x0000cc9f     0xe  Code  Gb  mpu6050.o [1]
+MPU6050_GetAcc_Z        0x0000ccad     0xe  Code  Gb  mpu6050.o [1]
+MPU6050_GetAngRateRaw_X
+                        0x0000ccbb     0xe  Code  Gb  mpu6050.o [1]
+MPU6050_GetAngRateRaw_Y
+                        0x0000ccc9     0xe  Code  Gb  mpu6050.o [1]
+MPU6050_GetAngRateRaw_Z
+                        0x0000ccd7     0xe  Code  Gb  mpu6050.o [1]
+MPU6050_GetChipID       0x0000cce5    0x16  Code  Gb  mpu6050.o [1]
+MPU6050_GetGry          0x0000ca7f   0x124  Code  Gb  mpu6050.o [1]
+MPU6050_Init            0x0000ca17    0x42  Code  Gb  mpu6050.o [1]
+MPU6050_ReadReg         0x0000cbb1    0x16  Code  Gb  mpu6050.o [1]
+MPU6050_ReadWord        0x0000cbc7    0x18  Code  Gb  mpu6050.o [1]
+MPU6050_SetACCFullScale
+                        0x0000cc19    0x18  Code  Gb  mpu6050.o [1]
+MPU6050_SetGRYFullScale
+                        0x0000cc31    0x18  Code  Gb  mpu6050.o [1]
+MPU6050_SetLPF          0x0000cc61    0x18  Code  Gb  mpu6050.o [1]
+MPU6050_SetMode         0x0000cc79    0x18  Code  Gb  mpu6050.o [1]
+MPU6050_SetODR          0x0000cc49    0x18  Code  Gb  mpu6050.o [1]
+MPU6050_SetOffset       0x0000cba3     0xe  Code  Gb  mpu6050.o [1]
+MPU6050_WriteReg        0x0000cbdf    0x16  Code  Gb  mpu6050.o [1]
+NVIC_DisableIRQ         0x0000bee9    0x14  Code  Lc  HW_NVIC.o [1]
+NVIC_EnableIRQ          0x0000af61    0x16  Code  Lc  HW_DMA.o [1]
+NVIC_EnableIRQ          0x00009e2d    0x14  Code  Lc  HW_GPIO.o [1]
+NVIC_EnableIRQ          0x0000bed5    0x14  Code  Lc  HW_NVIC.o [1]
+NVIC_EnableIRQ          0x0000c045    0x14  Code  Lc  HW_PIT.o [1]
+NVIC_EnableIRQ          0x0000a2b1    0x16  Code  Lc  HW_UART.o [1]
+NVIC_EncodePriority     0x0000bf39    0x3e  Code  Lc  HW_NVIC.o [1]
+NVIC_SetPriority        0x0000befd    0x22  Code  Lc  HW_NVIC.o [1]
+NVIC_SetPriorityGrouping
+                        0x0000beb9    0x1c  Code  Lc  HW_NVIC.o [1]
+OLED_DelayMs            0x000095d3    0x1a  Code  Gb  oled.o [1]
+OLED_DispACat           0x00009d4d    0x4c  Code  Gb  oled.o [1]
+OLED_DispAImg           0x00009d99    0x32  Code  Gb  oled.o [1]
+OLED_DispMyScene        0x00009dcb    0x32  Code  Gb  oled.o [1]
+OLED_DisplayImg         0x00009c6f    0x74  Code  Gb  oled.o [1]
+OLED_DisplayImgCalc     0x00009bf3    0x7c  Code  Gb  oled.o [1]
+OLED_Fill               0x00009597    0x3c  Code  Gb  oled.o [1]
+OLED_GPIO_Config        0x000097cf    0x3a  Code  Gb  oled.o [1]
+OLED_Init               0x000096f9    0xd6  Code  Gb  oled.o [1]
+OLED_PrintCharValue     0x000098b9    0x68  Code  Gb  oled.o [1]
+OLED_PrintFloatValue    0x00009a5b   0x114  Code  Gb  oled.o [1]
+OLED_PrintIntValue      0x00009921    0xb0  Code  Gb  oled.o [1]
+OLED_PrintUintValue     0x000099d1    0x8a  Code  Gb  oled.o [1]
+OLED_Put16x16CH         0x00009ce3    0x6a  Code  Gb  oled.o [1]
+OLED_Put6x8Char         0x00009809    0x3e  Code  Gb  oled.o [1]
+OLED_Put6x8Str          0x00009847    0x72  Code  Gb  oled.o [1]
+OLED_SetPosition        0x0000956f    0x28  Code  Gb  oled.o [1]
+OLED_WriteCmd           0x00009509    0x66  Code  Gb  oled.o [1]
+OLED_WriteData          0x000094a1    0x66  Code  Gb  oled.o [1]
+OLED_cat                0x0000e55c    0x80  Data  Gb  oled.o [1]
+OLED_img                0x0000b6cc   0x400  Data  Gb  oled.o [1]
+OS_CPU_SysTickHandler   0x0000ea09     0xa  Code  Gb  HW_SYSTICK.o [1]
+PDB_IRQHandler          0x0000e65d    0x6a  Code  Gb  HW_PDB.o [1]
+PDB_ISR                 0x1ffff1c0     0x4  Data  Gb  HW_PDB.o [1]
+PDB_SE_ISR              0x1ffff1c4     0x4  Data  Gb  HW_PDB.o [1]
+PIT0_IRQHandler         0x0000c107    0x16  Code  Gb  HW_PIT.o [1]
+PIT1_IRQHandler         0x0000c11d    0x16  Code  Gb  HW_PIT.o [1]
+PIT2_IRQHandler         0x0000c133    0x16  Code  Gb  HW_PIT.o [1]
+PIT3_IRQHandler         0x0000c149    0x16  Code  Gb  HW_PIT.o [1]
+PIT_ISR                 0x1ffff1c8    0x10  Data  Gb  HW_PIT.o [1]
+PORTA_IRQHandler        0x00009f3f    0x12  Code  Gb  HW_GPIO.o [1]
+PORTB_IRQHandler        0x00009f51    0x12  Code  Gb  HW_GPIO.o [1]
+PORTC_IRQHandler        0x00009f63    0x12  Code  Gb  HW_GPIO.o [1]
+PORTD_IRQHandler        0x00009f75    0x12  Code  Gb  HW_GPIO.o [1]
+PORTE_IRQHandler        0x00009f87    0x12  Code  Gb  HW_GPIO.o [1]
+RTC_IRQHandler          0x0000e73d    0x56  Code  Gb  HW_RTC.o [1]
+RTC_ISR                 0x1ffff1d8     0xc  Data  Gb  HW_RTC.o [1]
+Region$$Table$$Base     0x0000e92c           --   Gb  - Linker created -
+Region$$Table$$Limit    0x0000e93c           --   Gb  - Linker created -
+SPI0_IRQHandler         0x0000d6d9    0xaa  Code  Gb  HW_SPI.o [1]
+SPI0_ISR                0x1ffff1e4    0x18  Data  Gb  HW_SPI.o [1]
+SPI1_IRQHandler         0x0000d783    0xaa  Code  Gb  HW_SPI.o [1]
+SPI1_ISR                0x1ffff1fc    0x18  Data  Gb  HW_SPI.o [1]
+SPI2_IRQHandler         0x0000d82d    0xaa  Code  Gb  HW_SPI.o [1]
+SPI2_ISR                0x1ffff214    0x18  Data  Gb  HW_SPI.o [1]
+SYSTICK_ISR             0x1ffff22c     0x4  Data  Gb  HW_SYSTICK.o [1]
+SerialPortRx            0x1ffff3fc    0x6c  Data  Gb  uart.o [1]
+SetAddressingMode       0x000095ed    0x14  Code  Gb  oled.o [1]
+SetChargePump           0x00009623    0x16  Code  Gb  oled.o [1]
+SetCommonConfig         0x000096cf    0x16  Code  Gb  oled.o [1]
+SetCommonRemap          0x00009685     0xe  Code  Gb  oled.o [1]
+SetContrastControl      0x0000960f    0x14  Code  Gb  oled.o [1]
+SetDisplayClock         0x000096a7    0x14  Code  Gb  oled.o [1]
+SetDisplayOffset        0x00009693    0x14  Code  Gb  oled.o [1]
+SetDisplay_On_Off       0x00009677     0xe  Code  Gb  oled.o [1]
+SetEntireDisplay        0x00009647     0xe  Code  Gb  oled.o [1]
+SetInverseDisplay       0x00009655     0xe  Code  Gb  oled.o [1]
+SetMultiplexRatio       0x00009663    0x14  Code  Gb  oled.o [1]
+SetPrechargePeriod      0x000096bb    0x14  Code  Gb  oled.o [1]
+SetSegmentRemap         0x00009639     0xe  Code  Gb  oled.o [1]
+SetStartLine            0x00009601     0xe  Code  Gb  oled.o [1]
+SetVCOMH                0x000096e5    0x14  Code  Gb  oled.o [1]
+SystemCoreClock         0x1fff68c8     0x4  Data  Gb  system_MK60.o [1]
+SystemCoreClockUpdate   0x0000e1f1    0x26  Code  Gb  system_MK60.o [1]
+SystemInit              0x0000e151    0xa0  Code  Gb  system_MK60.o [1]
+TASK_Delay              0x0000e04f     0xe  Code  Gb  task.o [1]
+TASK_PIT0_Init          0x0000dfe9    0x66  Code  Gb  task.o [1]
+TASK_PIT3_Start         0x0000e05d     0xa  Code  Gb  task.o [1]
+TASK_PIT3_Stop          0x0000e067    0x48  Code  Gb  task.o [1]
+TSI_IRQHandler          0x0000e829    0x36  Code  Gb  HW_TSI.o [1]
+TSI_ISR                 0x1ffff230     0x8  Data  Gb  HW_TSI.o [1]
+TWINCORE_Init           0x0000c3c1    0x50  Code  Lc  twinCore.o [1]
+TWINCORE_Putchar        0x0000c411     0xe  Code  Lc  twinCore.o [1]
+TWINCORE_Send           0x0000c431    0x42  Code  Lc  twinCore.o [1]
+TWINCORE_Set            0x0000c41f    0x12  Code  Lc  twinCore.o [1]
+TWINCORE_isr            0x0000c475   0x1b4  Code  Gb  twinCore.o [1]
+TwinCorePortRx          0x1ffff34c    0x6c  Data  Gb  twinCore.o [1]
+TwinCore_Cmd            0x0000c3bf     0x2  Code  Lc  twinCore.o [1]
+TwinCore_Debug          0x0000c2ad   0x112  Code  Lc  twinCore.o [1]
+UART0_ERR_IRQHandler    0x0000aa79     0x2  Code  Gb  HW_UART.o [1]
+UART0_IRQHandler        0x0000a781    0x58  Code  Gb  HW_UART.o [1]
+UART1_ERR_IRQHandler    0x0000aa7b     0x2  Code  Gb  HW_UART.o [1]
+UART1_IRQHandler        0x0000a7d9    0x58  Code  Gb  HW_UART.o [1]
+UART2_ERR_IRQHandler    0x0000aa7d     0x2  Code  Gb  HW_UART.o [1]
+UART2_IRQHandler        0x0000a831    0x58  Code  Gb  HW_UART.o [1]
+UART3_ERR_IRQHandler    0x0000aa7f     0x2  Code  Gb  HW_UART.o [1]
+UART3_IRQHandler        0x0000a889    0x58  Code  Gb  HW_UART.o [1]
+UART4_ERR_IRQHandler    0x0000aa81     0x2  Code  Gb  HW_UART.o [1]
+UART4_IRQHandler        0x0000a8e1    0x58  Code  Gb  HW_UART.o [1]
+UART5_ERR_IRQHandler    0x0000aa83     0x2  Code  Gb  HW_UART.o [1]
+UART5_IRQHandler        0x0000a939    0x58  Code  Gb  HW_UART.o [1]
+UART_Init               0x0000c65d    0x62  Code  Lc  uart.o [1]
+UART_Printf             0x0000c6cd    0x18  Code  Lc  uart.o [1]
+UART_Putchar            0x0000c6bf     0xe  Code  Lc  uart.o [1]
+UART_R_ISR              0x1ffff238    0x18  Data  Gb  HW_UART.o [1]
+UART_SendToScope        0x0000c6f7    0x3c  Code  Lc  uart.o [1]
+UART_Set                0x0000c6e5    0x12  Code  Lc  uart.o [1]
+UART_T_ISR              0x1ffff250    0x18  Data  Gb  HW_UART.o [1]
+UART_isr                0x0000c735   0x214  Code  Gb  uart.o [1]
+UI_Menu                 0x1fff6970    0xb0  Data  Gb  UIStrings.o [1]
+UI_SetCursor            0x0000e4b1    0x48  Code  Gb  UI.o [1]
+UI_SetLevel             0x0000e4a5     0xc  Code  Gb  UI.o [1]
+UI_Update               0x0000e4f9    0x50  Code  Gb  UI.o [1]
+USB_ISR                 0x1ffff268     0x4  Data  Gb  HW_USB.o [1]
+USB_OTG_IRQHandler      0x0000ea19     0xa  Code  Gb  HW_USB.o [1]
+UartCmd                 0x0000c65b     0x2  Code  Lc  uart.o [1]
+UartData                0x1fff6a78    0x48  Data  Gb  uart.o [1]
+UartDebug               0x0000c659     0x2  Code  Lc  uart.o [1]
+__BOOT_STACK_ADDRESS {Abs}
+                        0x2000fff8           --   Gb  command line/config [2]
+__VECTOR_RAM {Abs}      0x1fff0000           --   Gb  command line/config [2]
+__VECTOR_TABLE {Abs}    0x00000000           --   Gb  command line/config [2]
+__Vectors               0x00000000           --   Gb  startup_K60D10.o [1]
+__Vectors_End           0x00000400          Data  Gb  startup_K60D10.o [1]
+__Vectors_Size {Abs}    0x00000400           --   Gb  startup_K60D10.o [1]
+__aeabi_cdcmpeq         0x000092cd          Code  Gb  DblCmpEq.o [4]
+__aeabi_cdcmple         0x00009085          Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x000090b5          Code  Gb  DblCmpGe.o [4]
+__aeabi_d2f             0x00008bcd          Code  Gb  DblToFlt.o [4]
+__aeabi_d2iz            0x00008929          Code  Gb  DblToI32.o [4]
+__aeabi_dadd            0x00008841          Code  Gb  DblAdd.o [4]
+__aeabi_ddiv            0x00008975          Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x00008519          Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x000086c1          Code  Gb  DblSub.o [4]
+__aeabi_errno_addr      0x000090e5     0x6  Code  Gb  errno.o [3]
+__aeabi_f2d             0x00008495          Code  Gb  FltToDbl.o [4]
+__aeabi_f2iz            0x0000a039          Code  Gb  FltToS32.o [4]
+__aeabi_fadd            0x0000a155          Code  Gb  FltAdd.o [4]
+__aeabi_fmul            0x0000a07d          Code  Gb  FltMul.o [4]
+__aeabi_i2d             0x000084e9          Code  Gb  I32ToDbl.o [4]
+__aeabi_i2f             0x0000ccfd          Code  Gb  I32ToFlt.o [4]
+__aeabi_ui2d            0x000084fd          Code  Gb  I32ToDbl.o [4]
+__cmain                 0x0000e95d          Code  Gb  cmain.o [5]
+__exit                  0x0000e98d    0x14  Code  Gb  exit.o [6]
+__iar_Dint              0x00009253    0x7a  Code  Gb  xdint.o [4]
+__iar_Errno             0x20000490     0x4  Data  Gb  errno.o [3]
+__iar_Quad              0x000090f1   0x160  Code  Gb  xquad.o [4]
+__iar_Sin               0x00008c5d   0x420  Code  Gb  xsin.o [4]
+__iar_close_ttio        0x0000e8a9    0x2e  Code  Gb  iarttio.o [6]
+__iar_d2uiz             0x00008955          Code  Gb  DblToI32.o [4]
+__iar_dadd              0x00008855          Code  Gb  DblAdd.o [4]
+__iar_data_init3        0x0000e8e1    0x28  Code  Gb  data_init.o [5]
+__iar_dlib_perthread_access
+                        0x00009251     0x2  Code  Gb  xtls.o [3]
+__iar_dsub              0x000086d5          Code  Gb  DblSub.o [4]
+__iar_dsubStart         0x000086e7          Code  Gb  DblSub.o [4]
+__iar_edom              0x00009495          Code  Gb  iarEdom.o [5]
+__iar_fadd              0x0000a165          Code  Gb  FltAdd.o [4]
+__iar_fmod              0x000092ed          Code  Gb  fmod.o [4]
+__iar_fmodl             0x000092ed          Code  Gb  fmod.o [4]
+__iar_fsub              0x0000a1d9          Code  Gb  FltSub.o [4]
+__iar_fsubStart         0x0000a1e9          Code  Gb  FltSub.o [4]
+__iar_lookup_ttioh      0x0000e8d9     0x8  Code  Gb  XShttio.o [3]
+__iar_program_start     0x0000ea29          Code  Gb  cstartup_M.o [5]
+__iar_ttio_handles      0x1fff6a20     0x8  Data  Lc  XShttio.o [3]
+__iar_ui2d              0x00008501          Code  Gb  I32ToDbl.o [4]
+__iar_ui2f              0x0000cd11          Code  Gb  I32ToFlt.o [4]
+__iar_unaligned___aeabi_memcpy4
+                        0x00009fe1          Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy8
+                        0x00009fe1          Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_zero_init3        0x0000e869    0x40  Code  Gb  zero_init3.o [5]
+__low_level_init        0x0000e977     0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000          Data  Gb  startup_K60D10.o [1]
+__vector_table_0x1c     0x0000001c          Data  Gb  startup_K60D10.o [1]
+_call_main              0x0000e969          Code  Gb  cmain.o [5]
+_exit                   0x0000e981          Code  Gb  cexit.o [5]
+_main                   0x0000e973          Code  Gb  cmain.o [5]
+abs                     0x0000848d     0x8  Code  Gb  abs.o [3]
+bit                     0x0000ea34     0x8  Data  Gb  calc.o [1]
+c_ubyColor              0x00006a40     0x2  Data  Gb  camera.o [1]
+calc                    0x1fff0410   0x440  Data  Gb  calc.o [1]
+camera                  0x1fff08b8  0x5f70  Data  Gb  camera.o [1]
+carNum                  0x1ffff2ac     0x4  Data  Gb  LPHD_camCore.o [1]
+charCH                  0x0000e7e8    0x40  Data  Gb  calc.o [1]
+cnt_ch                  0x1ffff2a4     0x4  Data  Gb  ledArray.o [1]
+cnt_led                 0x1ffff2b0     0x4  Data  Gb  LPHD_camCore.o [1]
+cnt_step                0x1ffff2a8     0x4  Data  Gb  ledArray.o [1]
+common_relocate         0x0000e251    0xa0  Code  Gb  relocate.o [1]
+cos                     0x000084e3     0x6  Code  Gb  cos.o [4]
+cube                    0x0000e6dc    0x60  Data  Lc  calc.o [1]
+delayMs                 0x1ffff30c     0x4  Data  Gb  task.o [1]
+exit                    0x0000e97b     0x4  Code  Gb  exit.o [3]
+flag_cursor             0x1ffff488     0x4  Data  Lc  UI.o [1]
+flag_static             0x1ffff484     0x4  Data  Lc  UI.o [1]
+flag_stopL              0x1fff6ed4     0x4  Data  Gb  calc.o [1]
+flag_stopR              0x1fff6ed8     0x4  Data  Gb  calc.o [1]
+flexcan_msgobj_param_t  0x1fffefac   0x100  Data  Gb  HW_CAN.o [1]
+fmod                    0x000092ed          Code  Gb  fmod.o [4]
+fmodl                   0x000092ed          Code  Gb  fmod.o [4]
+g_bus_clock             0x1fff682c     0x4  Data  Gb  HW_MCG.o [1]
+g_core_clock            0x1fff6828     0x4  Data  Gb  HW_MCG.o [1]
+g_flash_clock           0x1fff6830     0x4  Data  Gb  HW_MCG.o [1]
+g_flexbus_clock         0x1fff6834     0x4  Data  Gb  HW_MCG.o [1]
+getBufPix               0x00009b6f    0x84  Code  Lc  oled.o [1]
+i2c                     0x1fff6838    0x10  Data  Gb  i2c.o [1]
+led                     0x1fff6848     0x8  Data  Gb  led.o [1]
+ledArray                0x1fff6850    0x10  Data  Gb  ledArray.o [1]
+limitX                  0x00006a45    0x12  Code  Lc  calc.o [1]
+lineL                   0x1fff6ca0   0x1e0  Data  Lc  calc.o [1]
+lineR                   0x1fff6ac0   0x1e0  Data  Lc  calc.o [1]
+main                    0x0000bacd   0x24e  Code  Gb  LPHD_camCore.o [1]
+mpu6050                 0x1fff6860    0x34  Data  Gb  mpu6050.o [1]
+mpu_PIT2_Init           0x0000bd27    0x64  Code  Gb  LPHD_camCore.o [1]
+nFlag_Range             0x1fff08b4     0x4  Data  Gb  camera.o [1]
+oled                    0x1fff6894    0x34  Data  Gb  oled.o [1]
+pit0_isr                0x0000e0b1    0x7c  Code  Gb  task.o [1]
+pit2_isr                0x0000bd1b     0xc  Code  Gb  LPHD_camCore.o [1]
+regaCameraEagle         0x1fff0850    0x64  Data  Gb  camera.o [1]
+sendData                0x1ffff3d8    0x24  Data  Gb  uart.o [1]
+showMyWords             0x0000bd8b    0x90  Code  Gb  LPHD_camCore.o [1]
+sin                     0x000086bb     0x6  Code  Gb  sin.o [4]
+state_out               0x1fff6e80    0x54  Data  Gb  calc.o [1]
+task                    0x1fff68cc    0x28  Data  Gb  task.o [1]
+testCar                 0x0000be1b    0x3e  Code  Gb  LPHD_camCore.o [1]
+twinCore                0x1fff68f4    0x20  Data  Gb  twinCore.o [1]
+twinCore_sendData       0x1ffff338    0x14  Data  Gb  twinCore.o [1]
+uart                    0x1fff6914    0x18  Data  Gb  uart.o [1]
+ubyCameraEagle_CfgNum   0x1fff6a28     0x1  Data  Gb  camera.o [1]
+ubyCamera_Init          0x0000abf1    0x9c  Code  Gb  camera.o [1]
+ubyRange                0x1ffff48e     0x1  Data  Gb  camera.o [1]
+ui                      0x1fff692c    0x44  Data  Gb  UI.o [1]
+z_buf                   0x1fff6f3c  0x8000  Data  Gb  calc.o [1]
+
+
+[1] = C:\Users\ShowD\Desktop\LPHD\LPHD_camCore\LPHD_camCore\iar\FLASH\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  30 930 bytes of readonly  code memory
+      76 bytes of readwrite code memory
+  29 022 bytes of readonly  data memory
+  65 589 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
